@@ -1,0 +1,11 @@
+<section class="container forecast-data-wrapper">
+  <div class="card-columns">
+    <div class="card bg-light text-dark" *ngFor="let data of forecastdata">
+      <div class="card-body text-center">
+        <h4 class="card-title">{{data?.dt_txt}}</h4>
+        <h5 class="card-text">Temperature: {{data?.main?.temp}}</h5>
+        <h5 class="card-text">Sea Level: {{data?.main?.sea_level}}</h5>
+      </div>
+    </div>
+  </div>
+</section>

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "wheaterapp"
+    }
+  },
+  "defaultProject": "wheaterapp",
+  "cli": {
+    "analytics": "b46dc13a-c629-429c-832b-607350ce928f"
+  }
 }

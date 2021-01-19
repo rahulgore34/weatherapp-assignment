@@ -1,0 +1,12 @@
+<section class="data-wrapper">
+  <div class="card-deck">
+    <div class="card bg-light text-dark" *ngFor="let data of cityWeatherData" (click)="showDetails(data)">
+      <div class="card-body text-center">
+        <h4 class="card-title">{{data?.name}}</h4>
+        <h5 class="card-text">Temperature: {{data?.main?.temp}}</h5>
+        <p class="card-text">Sunrise: {{data?.sys?.sunrise | dateformat}} </p>
+        <p class="card-text">Sunset: {{data?.sys?.sunset | dateformat}}</p>
+      </div>
+    </div>
+  </div>
+</section>
